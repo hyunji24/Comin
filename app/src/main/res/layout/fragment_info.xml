@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketInfo.InfoFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="강의 소개"/>
+
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="지구에서 제일 쉽게 설명한 자료구조와 알고리즘이라고 강의제목을 지었습니다.
+이전에 저도 대학교에서 자료구조 수업을 수강했었고, 다양한 온라인 가으이를 수강했었습니다"/>
+</FrameLayout>
