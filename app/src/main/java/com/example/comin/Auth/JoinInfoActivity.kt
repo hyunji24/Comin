@@ -27,7 +27,8 @@ class JoinInfoActivity : AppCompatActivity() {
             val user = hashMapOf(
                 "nickname" to join_info_email_area.text.toString()
             )
-            db.collection("uers").document(auth.currentUser?.uid.toString())
+            db.collection("users")
+                .document(auth.currentUser?.uid.toString())
                 .set(user)
                 .addOnSuccessListener{ Log.e("JoinInfoActivity","성공")
                 val intent= Intent(this,MainActivity::class.java)
