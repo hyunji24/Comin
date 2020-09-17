@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.example.comin.Auth.LoginActivity
 import com.example.comin.Auth.MyCominActivity
+import com.example.comin.Zzim.ZzimActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.bottom.*
@@ -51,6 +52,10 @@ viewpager=findViewById(R.id.viewpager) as ViewPager
 val adapter=ViewPagerAdapter(this)
 viewpager.adapter=adapter
 
+        zzim_lectures.setOnClickListener {
+            val intent=Intent(this,ZzimActivity::class.java)
+            startActivity(intent)
+        }
         my_page.setOnClickListener {
             if(auth.currentUser==null){
                 val intent=Intent(this, LoginActivity::class.java)

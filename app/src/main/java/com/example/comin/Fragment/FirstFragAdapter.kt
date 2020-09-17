@@ -31,6 +31,7 @@ FirstFragAdapter (val context: Context, val list:ArrayList<ContentListModel>): B
 
         }
         val item=list[position]
+        holder.view_image1?.setImageResource(item.image)
         holder.view_text1?.text=item.title
         return view
     }
